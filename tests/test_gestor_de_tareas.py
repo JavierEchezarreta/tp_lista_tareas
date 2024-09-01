@@ -17,11 +17,11 @@ def test_completar_tarea(gestor):
 
     gestor.agregar_tarea("Tarea de prueba")
     gestor.completar_tarea("Tarea de prueba")
-    assert gestor.tarea_completada("Tarea de prueba") == True
+    assert gestor.chequear_tarea("Tarea de prueba") == True
 
     gestor.agregar_tarea("Segunda tarea de prueba")
     gestor.completar_tarea("Segunda tarea de prueba")
-    assert gestor.tarea_completada("Segunda tarea de prueba") == True
+    assert gestor.chequear_tarea("Segunda tarea de prueba") == True
 
 def test_eliminar_tarea(gestor):
 
@@ -34,4 +34,3 @@ def test_eliminar_tarea(gestor):
     gestor.eliminar_tarea("Segunda tarea de prueba")
     with pytest.raises(ValueError):
         gestor.buscar_tarea("Segunda tarea de prueba")
-
