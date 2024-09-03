@@ -7,9 +7,9 @@ Este gestor de tareas simple fue desarrollado en Python con PySide6 para la inte
 ## Requisitos
 
 Antes de comenzar, asegúrate de tener instalado lo siguiente: 
-- **Python 3.10 o superior ---> [Ver] (https://kinsta.com/es/base-de-conocimiento/instalar-python/)
-- **Pip ----> [Ver] (https://tecnonucleous.com/2018/01/28/como-instalar-pip-para-python-en-windows-mac-y-linux/) 
-- **Git (opcional)----> [Ver] (https://www.hostinger.com.ar/tutoriales/instalar-git-en-distintos-sistemas-operativos)
+- **Python 3.10 o superior** ---> [Ver] (https://kinsta.com/es/base-de-conocimiento/instalar-python/)
+- **Pip** ----> [Ver] (https://tecnonucleous.com/2018/01/28/como-instalar-pip-para-python-en-windows-mac-y-linux/) 
+- **Git (opcional)** ----> [Ver] (https://www.hostinger.com.ar/tutoriales/instalar-git-en-distintos-sistemas-operativos)
 
 ## Instalación
 
