@@ -2,7 +2,6 @@ from PySide6.QtCore import QAbstractListModel, Qt, QModelIndex
 from gestor_de_tareas import GestorDeTareas
 from PySide6.QtGui import QFont
 
-
 class ModeloDeTareas(QAbstractListModel):
     def __init__(self, gestor: GestorDeTareas):
         super().__init__()
@@ -15,7 +14,7 @@ class ModeloDeTareas(QAbstractListModel):
         if not index.isValid() or index.row() >= self.rowCount():
             return None
 
-        tarea = self._gestor._tareas[index.row()]
+        tarea = self._gestor.obtener_tareas()[index.row()]
 
         if role == Qt.DisplayRole:
             return tarea.mostrar()
