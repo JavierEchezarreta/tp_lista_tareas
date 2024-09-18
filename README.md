@@ -6,14 +6,15 @@ Este gestor de tareas simple fue desarrollado en Python con PySide6 para la inte
 
 ## Requisitos
 
-Antes de comenzar, asegúrate de tener instalado lo siguiente: 
-- **Python 3.10 o superior** ---> [Ver] (https://kinsta.com/es/base-de-conocimiento/instalar-python/)
-- **Pip** ----> [Ver] (https://tecnonucleous.com/2018/01/28/como-instalar-pip-para-python-en-windows-mac-y-linux/) 
-- **Git (opcional)** ----> [Ver] (https://www.hostinger.com.ar/tutoriales/instalar-git-en-distintos-sistemas-operativos)
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
+- **Python 3.10 o superior** [Ver](https://kinsta.com/es/base-de-conocimiento/instalar-python/)
+- **Pip** [Ver](https://tecnonucleous.com/2018/01/28/como-instalar-pip-para-python-en-windows-mac-y-linux/)
+- **Git (opcional)** [Ver](https://www.hostinger.com.ar/tutoriales/instalar-git-en-distintos-sistemas-operativos)
+
 
 ## Instalación
 
-Para clonar el repositorio desde GitHub ejecuta: 
+Para clonar el repositorio desde GitHub, abre la terminal y ejecuta:
 ``` 
 git clone https://github.com/JavierEchezarreta/tp_lista_tareas.git
 ```
@@ -23,9 +24,9 @@ Si no tienes Git, también puedes descargar el proyecto como archivo ZIP y desco
 
 Es recomendable trabajar con un entorno virtual para aislar las dependencias del proyecto. A continuación, se muestran los pasos para configurar el entorno virtual usando la herramienta 'venv' de Python. Para crear un entorno virtual con venv en el directorio del proyecto primero ejecuta:
 ``` 
-python3 -m venv venv'
+python3 -m venv venv
 ```
-Una ves creado el entorno virtual debes ponerlo en funcionamiento ejecutando:
+Una vez creado el entorno virtual debes activarlo ejecutando:
 
 En Linux/Mac:
 ``` 
@@ -33,15 +34,24 @@ source venv/bin/activate
 ```
 En Windows:
 ``` 
-venv\Scripts\activate' 
+venv\Scripts\activate
 ```
 
 ## Instalación de Dependencias
 
 Con el entorno virtual activado, instala las dependencias necesarias ejecutando el siguiente comando: 
 ``` 
-'pip install -r requirements.txt'. 
+pip install -r requirements.txt
 ```
+
+## Generar la interfaz gráfica
+
+Desde la terminal, dentro del directorio `src/ui`, debes compilar el archivo `interfaz.ui` ejecutando:
+
+```
+pyside6-uic interfaz.ui -o interfaz.py
+```
+
 
 ## Ejecución de la Aplicación
 
@@ -53,7 +63,10 @@ Esto abrirá la interfaz gráfica del gestor de tareas, lista para que empieces 
 
 ## Uso de la Aplicación
 
-Agregar Tarea: ingresa la descripción de la tarea en el campo de texto y presiona el botón "Agregar". Completar Tarea: selecciona la tarea en la lista y presiona "Completar". La tarea se marcará como completada. Eliminar Tarea: selecciona la tarea en la lista y presiona "Eliminar". La tarea será eliminada.
+- Agregar Tarea: ingresa la descripción de la tarea en el campo de texto y presiona el botón 'Agregar'.
+- Completar Tarea: selecciona la tarea en la lista y presiona 'Completar'. La tarea se marcará como completada.
+- Eliminar Tarea: selecciona la tarea en la lista y presiona 'Eliminar'. La tarea será eliminada.
+
 
 
 

@@ -34,14 +34,14 @@ class ModeloDeTareas(QAbstractListModel):
     def completar_tarea(self, index):
         if not index.isValid():
             return
-        descripcion = self._gestor.obtener_descripciones()[index.row()]
-        self._gestor.completar_tarea(descripcion)
+        identificadores = self._gestor.obtener_identificadores()[index.row()]
+        self._gestor.completar_tarea(identificadores)
         self.dataChanged.emit(index, index, [Qt.DisplayRole, Qt.FontRole])
 
     def eliminar_tarea(self, index):
         if not index.isValid():
             return
         self.beginRemoveRows(QModelIndex(), index.row(), index.row())
-        descripcion = self._gestor.obtener_descripciones()[index.row()]
-        self._gestor.eliminar_tarea(descripcion)
+        identificadores = self._gestor.obtener_identificadores()[index.row()]
+        self._gestor.eliminar_tarea(identificadores)
         self.endRemoveRows()
