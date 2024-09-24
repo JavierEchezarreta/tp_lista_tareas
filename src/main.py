@@ -1,6 +1,6 @@
 import sys
 from PySide6.QtWidgets import QApplication
-from ventana_principal import VentanaPrincipal
+from modelo_tareas import VentanaPrincipal
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
