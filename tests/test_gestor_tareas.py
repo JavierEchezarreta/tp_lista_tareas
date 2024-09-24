@@ -53,6 +53,7 @@ def test_eliminar_tarea(gestor):
     assert gestor.contar_tareas() == 0
 
 def test_ids_unicos(gestor):
+
     gestor.agregar_tarea("tarea_1")
     gestor.agregar_tarea("tarea_2")
     gestor.agregar_tarea("tarea_3")

@@ -21,9 +21,9 @@ class GestorDeTareas:
         self.__tareas = []
 
     def agregar_tarea(self, descripcion):
-        tarea = Tarea(descripcion)
         if not descripcion.strip():
             raise ValueError("No se puede agregar un tarea sin descripcion")
+        tarea = Tarea(descripcion)
         self.__tareas.append(tarea)
         return tarea.identificar()
 

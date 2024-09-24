@@ -308,3 +308,6 @@ pyrightconfig.json
 #Ignore .py files in src/ui
 src/ui/*.py
 
+#Ignore icons.py
+src/icons_rc.py
+
