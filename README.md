@@ -12,7 +12,6 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 - **Pip** [Ver](https://tecnonucleous.com/2018/01/28/como-instalar-pip-para-python-en-windows-mac-y-linux/)
 - **Git (opcional)** [Ver](https://www.hostinger.com.ar/tutoriales/instalar-git-en-distintos-sistemas-operativos)
 
-
 ## Instalación
 
 Para clonar el repositorio desde GitHub, abre la terminal y ejecuta:
@@ -53,10 +52,10 @@ Desde la terminal y dentro del directorio `src/ui`, debes compilar el archivo `i
 pyside6-uic interfaz.ui -o interfaz.py
 ```
 
-Luego dentro del directorio raiz del proyecto `tp_lista_tareas`, debes compilar el archivo `icons.qrc` ejecutando:
+Luego dentro del directorio raiz del proyecto `/src`, debes compilar el archivo `icons.qrc` ejecutando:
 
 ```
-pyside6-rcc src/ui/icons/icons.qrc -o src/icons_rc.py
+pyside6-rcc icons.qrc -o icons_rc.py
 ```
 
 ## Ejecución de la Aplicación
@@ -72,14 +71,3 @@ Esto abrirá la interfaz gráfica del gestor de tareas, lista para que empieces 
 - **Agregar Tarea**: ingresa la descripción de la tarea en el campo de texto y presiona el botón 'Agregar'.
 - **Completar Tarea**: selecciona la tarea en la lista y presiona 'Completar'. La tarea se marcará como completada.
 - **Eliminar Tarea**: selecciona la tarea en la lista y presiona 'Eliminar'. La tarea será eliminada.
-
-
-
-
-
-
-
-
-
-
-
